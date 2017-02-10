@@ -1,8 +1,38 @@
 <!DOCTYPE html>
-<html>
+<html >
+<head>
+  <meta charset="UTF-8">
+  <title>Basic Fullscreen Video Background</title>
+  
+  
+  
+      <link rel="stylesheet" href="css/style.css">
+<script type="text/javascript" src="js/instafeed.min.js"></script>
+ <script type="text/javascript">
+    var feed = new Instafeed({
+        get: 'user',
+        clientId: '	fa9b975dce634b8bba2ee28fc0169ec9'
+    });
+    feed.run();
+</script>
+
+</head>
+
 <body>
-<h1>Hello World</h1>
-<p>I'm hosted with GitHub Pages.</p>
-<p>Maxime et Renaud</p>
+  <link href='http://fonts.googleapis.com/css?family=Oswald' rel='stylesheet' type='text/css'>
+
+<!--  Content  -->
+<article>
+  <h1>MAXIME&RENAUD<br /> <span>directeur de création</span></h1>
+</article>
+  
+<!--  Video is muted & autoplays, placed after major DOM elements for performance & has an image fallback  -->
+<video autoplay loop id="video-background" muted>
+  <source src="https://maximeetrenaud.github.io/video/bandedemo.mp4" type="video/mp4">
+</video>
+
+<div id="instafeed"></div>
+  
+  
 </body>
 </html>
