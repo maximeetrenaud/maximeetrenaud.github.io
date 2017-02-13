@@ -18,14 +18,22 @@
 <script src="js/bootstrap.min.js"></script>
 
 <script type="text/javascript">
-    var feed = new Instafeed({
-        get: 'user',
-        userId: '2283226522',
-        clientId: 'fa9b975dce634b8bba2ee28fc0169ec9',
-        accessToken: '2283226522.1677ed0.a7cfc3d5874d4128a38965b81ef389cb',
-    });
-    feed.run();
+  var userFeed = new Instafeed({
+    get: 'user',
+    userId: '2283226522',
+    clientId: 'fa9b975dce634b8bba2ee28fc0169ec9',
+    accessToken: '2283226522.1677ed0.a7cfc3d5874d4128a38965b81ef389cb',
+    resolution: 'standard_resolution',
+    template: '<a href="{{link}}" target="_blank" id="{{id}}"><img src="{{image}}" /><span>{{likes}}{{comments}}</span></a>',
+    sortBy: 'most-recent',
+    limit: 32,
+    links: false
+  });
+  userFeed.run();
 </script>
+
+
+
 
 </head>
 <body>
