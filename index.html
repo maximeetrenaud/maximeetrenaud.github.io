@@ -16,10 +16,14 @@
 <script src="js/videoheader.js"></script>
 <script src="js/instafeed.js"></script>
 <script src="js/bootstrap.min.js"></script>
+
 <script type="text/javascript">
     var feed = new Instafeed({
         get: 'user',
-        clientId: '2283226522'
+        userId: '2283226522',
+        filter: function(image) {
+            return image.tags.indexOf('TAG_NAME') >= 0;
+        }
     });
     feed.run();
 </script>
