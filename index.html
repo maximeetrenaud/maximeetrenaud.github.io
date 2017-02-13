@@ -1,38 +1,293 @@
 <!DOCTYPE html>
-<html >
+<html lang="en">
 <head>
-  <meta charset="UTF-8">
-  <title>Basic Fullscreen Video Background</title>
-  
-  
-  
-      <link rel="stylesheet" href="css/style.css">
-<script type="text/javascript" src="js/instafeed.min.js"></script>
- <script type="text/javascript">
-    var feed = new Instafeed({
-        get: 'user',
-        clientId: '	fa9b975dce634b8bba2ee28fc0169ec9'
-    });
-    feed.run();
+<meta charset="utf-8">
+<meta http-equiv="X-UA-Compatible" content="IE=edge">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<meta name="description" content="Studio de creation graphique - Paris depuis 2012">
+<meta name="keywords" content="Mathilde Dewolf,Alex Monteiro,Maxime Renaud,graphic,web,mobile,design,video,motion,typography,iApp,design,les marqueurs, graphic design, motion design, web design">
+<meta name="author" content="Les Marqueurs">
+<link rel="shortcut icon" href="img/favicon.ico">
+<link rel="apple-touch-icon" href="img/apple-touch-icon.png">
+<title>Les Marqueurs - Studio de Cr&eacute;ations 360°</title>
+<link href="css/bootstrap.min.css" rel="stylesheet">
+<link href="css/animate.css" rel="stylesheet">
+<link href="css/lesmarqueurs.css" rel="stylesheet">
+<script src="js/jquery.min.js"></script>
+<script src="js/javascript.js"></script>
+<script src="js/lettering.js"></script>
+<script src="js/textillate.js"></script>
+<script src="js/bootstrap.min.js"></script>
+<script src="http://maps.googleapis.com/maps/api/js?sensor=false"></script>
+<script type="text/javascript">    
+     function init_map() {
+		 	var myLocation = new google.maps.LatLng(48.8857356,2.3510422);
+			
+			var mapOptions = {
+              center: myLocation,
+              zoom: 13,
+              mapTypeId: google.maps.MapTypeId.ROADMAP,
+              mapTypeControl: false,
+              panControl:false,
+              rotateControl:false,
+              scrollwheel: false,
+              streetViewControl: false,
+styles: [
+   {
+    "elementType": "geometry.stroke",
+    "stylers": [
+      { "visibility": "simplified" }
+    ]
+  },{
+    "featureType": "water",
+    "stylers": [
+      { "color": "#318ce7" }
+    ]
+  },{
+    "featureType": "landscape",
+    "elementType": "geometry",
+    "stylers": [
+      { "color": "#efefef" }
+    ]
+  },{
+    "elementType": "geometry"  }
+],
+            };
+			
+			var image = {
+    			url: "img/lesmarqueurslogomap.png",
+    			size: new google.maps.Size(50, 50),
+    			origin: new google.maps.Point(0,0),
+    			anchor: new google.maps.Point(25,50)
+};
+			var marker = new google.maps.Marker({
+				position: myLocation,
+				map: map,
+            	icon: image,
+				title:"LesMarqueurs"});
+
+			var map = new google.maps.Map(document.getElementById("googlemap"),
+            	mapOptions);
+		
+		    marker.setMap(map);
+
+      }
+	  
+      google.maps.event.addDomListener(window, 'load', init_map);
+            
+    </script>
+<script type="text/javascript">
+$(document).ready(function() {
+   $('#mce-EMAIL').data('holder',$('#mce-EMAIL').attr('placeholder'));
+   $('#mce-EMAIL').focusin(function(){
+       $(this).attr('placeholder','');
+   });
+   $('#mce-EMAIL').focusout(function(){
+       $(this).attr('placeholder',$(this).data('holder'));
+   });
+});
 </script>
-
+<script>
+$(function () {
+$('.tlt').textillate({
+  loop: true
+})})
+</script>
 </head>
-
 <body>
-  <link href='http://fonts.googleapis.com/css?family=Oswald' rel='stylesheet' type='text/css'>
+<div class="content">
+<div class="headergif visible-sm visible-xs"><img src="video/lesmarqueurs.gif" class="img-responsive" alt="Responsive image"></div>
+<div class="header visible-lg visible-md">
+  <div class="titre"></div>
+  <div class="scrolldown">defiler vers le bas</div>
+  <div id="videoheader">
+    <video autoplay loop muted>
+      <source src="video/lesmarqueurs.mp4" type="video/mp4">
+      <source src="video/lesmarqueurs.webm" type="video/webm">
+      <source src="video/lesmarqueurs.ogv" type="video/ogv">
+    </video>
+  </div>
+</div>
+<div class="container">
+  <div class="row">
+    <div class="col-lg-12 boutonsanslien"><a class="bouton sanslien" href="#"><span class="textebase">studio de creation</span><span class="textehover">#artdirection #motiondesign #socialmedia</span></a></div>
+  </div>
+  <div class="row">
+    <div class="col-md-12">
+      <p><strong>Les Marqueurs est un studio de création spécialisé dans la Direction Artistique et les Médias Sociaux</strong> basé au coeur du 18e arrondissement de Paris.</br>
+Créé en 2012 par Mathilde Dewolf, Maxime Renaud & Alexandre Monteiro, nous sommes avant tout une équipe de créatifs qui partagent les mêmes valeurs. 
+Notre objectif: innover en dépassant nos limites quotidiennement afin de satisfaire notre sempiternelle soif de nouveaux challenges!</br></br>
 
-<!--  Content  -->
-<article>
-  <h1>MAXIME&RENAUD<br /> <span>directeur de création</span></h1>
-</article>
-  
-<!--  Video is muted & autoplays, placed after major DOM elements for performance & has an image fallback  -->
-<video autoplay loop id="video-background" muted>
-  <source src="https://maximeetrenaud.github.io/video/bandedemo.mp4" type="video/mp4">
-</video>
+Une idée? une question? envie de discuter? Ecrivez-nous ou passez prendre un café au studio! 
+Nous sommes là pour vous conseiller, vous guider, et vous accompagner dans la création de vos projets de A à Z, quelque soit le médium!</p>
+    </div>
+  </div>
+  <div class="row">
+    <div class="col-lg-12">
+      <h2>ils nous font confiance</h2>
+    </div>
+  </div>
+  <div class="row">
+    <div class="col-lg-3 col-md-3 col-sm-4 col-xs-4"><img src="img/clients/altarea.png" class="img-responsive" alt="Responsive image"></div>
+    <div class="col-lg-3 col-md-3 col-sm-4 col-xs-4"><img src="img/clients/citadium.png" class="img-responsive" alt="Responsive image"></div>
+    <div class="col-lg-3 col-md-3 col-sm-4 col-xs-4"><img src="img/clients/columbia.png" class="img-responsive" alt="Responsive image"></div>
+    <div class="col-lg-3 col-md-3 col-sm-4 col-xs-4"><img src="img/clients/disney.png" class="img-responsive" alt="Responsive image"></div>
+    <div class="col-lg-3 col-md-3 col-sm-4 col-xs-4"><img src="img/clients/eads.png" class="img-responsive" alt="Responsive image"></div>
+    <div class="col-lg-3 col-md-3 col-sm-4 col-xs-4"><img src="img/clients/hec.png" class="img-responsive" alt="Responsive image"></div>
+    <div class="col-lg-3 col-md-3 col-sm-4 col-xs-4"><img src="img/clients/hkcorp.png" class="img-responsive" alt="Responsive image"></div>
+    <div class="col-lg-3 col-md-3 col-sm-4 col-xs-4"><img src="img/clients/mairiedeparis.png" class="img-responsive" alt="Responsive image"></div>
+    <div class="col-lg-3 col-md-3 col-sm-4 col-xs-4"><img src="img/clients/martini.png" class="img-responsive" alt="Responsive image"></div>
+    <div class="col-lg-3 col-md-3 col-sm-4 col-xs-4"><img src="img/clients/polydor.png" class="img-responsive" alt="Responsive image"></div>
+    <div class="col-lg-3 col-md-3 col-sm-4 col-xs-4"><img src="img/clients/wagram.png" class="img-responsive" alt="Responsive image"></div>
+    <div class="col-lg-3 col-md-3 col-sm-4 col-xs-4"><img src="img/clients/deezer.png" class="img-responsive" alt="Responsive image"></div>
+  </div>
+  <div class="row">
+    <div class="col-lg-12">
+      <h1 class="ligne1 tlt">
+        <ul class="texts">
+          <li data-in-effect="fadeIn"  data-in-sync="true" data-out-effect="fadeOut" data-out-sync="true">&laquo; une belle rencontre, une equipe creative</li>
+          <li data-in-effect="fadeIn"  data-in-sync="true" data-out-effect="fadeOut" data-out-sync="true">&laquo; vous avez du talent</li>
+        </ul>
+      </h1>
+    </div>
+    <div class="col-lg-12">
+      <h1 class="ligne2 tlt">
+        <ul class="texts">
+          <li data-in-effect="fadeIn"  data-in-sync="true" data-out-effect="fadeOut" data-out-sync="true">genereuse et pleine d'idees &raquo;</li>
+          <li data-in-effect="fadeIn"  data-in-sync="true" data-out-effect="fadeOut" data-out-sync="true">et une belle energie &raquo;</li>
+        </ul>
+      </h1>
+    </div>
+    <div class="col-lg-12">
+      <h1 class="ligne3 tlt">
+        <ul class="texts">
+          <li data-in-effect="fadeIn"  data-in-sync="true" data-out-effect="fadeOut" data-out-sync="true">oxmo puccino</li>
+          <li data-in-effect="fadeIn"  data-in-sync="true" data-out-effect="fadeOut" data-out-sync="true">patrick bruel</li>
+        </ul>
+      </h1>
+    </div>
+  </div>
+  <div class="row">
+    <div class="col-lg-12">
+      <h2>nos reseaux sociaux</h2>
+    </div>
+  </div>
+  <div class="row">
+    <div class="col-lg-3 col-md-3 col-sm-6 col-xs-12"> <a class="bouton justehover facebook" href="http://facebook.com/lesmarqueurs" target="_blank"> <span class="textebase">
+      <div class="nombresocial">5 431</div>
+      <div class="liensocial">j'aime sur notre page</div>
+      <div class="reseausocial">facebook</div>
+      </span> <span class="textehover">facebook</span> </a> </div>
+    <div class="col-lg-3 col-md-3 col-sm-6 col-xs-12"> <a class="bouton justehover instagram" href="http://instagram.com/lesmarqueurs" target="_blank"> <span class="textebase">
+      <div class="nombresocial">2 493</div>
+      <div class="liensocial">abonnés sur notre compte</div>
+      <div class="reseausocial">instagram</div>
+      </span> <span class="textehover">instagram</span> </a> </div>
+    <div class="col-lg-3 col-md-3 col-sm-6 col-xs-12"> <a class="bouton justehover twitter" href="http://twitter.com/lesmarqueurs" target="_blank"> <span class="textebase">
+      <div class="nombresocial">2 034</div>
+      <div class="liensocial">abonnés sur notre compte</div>
+      <div class="reseausocial">twitter</div>
+      </span> <span class="textehover">twitter</span> </a> </div>
+    <div class="col-lg-3 col-md-3 col-sm-6 col-xs-12"> <a class="bouton justehover youtube" href="http://youtube.com/lesmarqueurs" target="_blank"> <span class="textebase">
+      <div class="nombresocial">4 628 430</div>
+      <div class="liensocial">vues sur nos vidéos</div>
+      <div class="reseausocial">youtube</div>
+      </span> <span class="textehover">youtube</span> </a> </div>
+  </div>
+</div>
+<div class="blackback videovimeo">
+  <div class="container">
+    <div class="row">
+      <div class="col-lg-12 visible-lg">
+			<iframe src="https://player.vimeo.com/video/188797167?title=0&byline=0&portrait=0" width="940" height="528" frameborder="0" webkitallowfullscreen mozallowfullscreen allowfullscreen></iframe>
+      </div>
+      <div class="col-md-12 visible-md">
+			<iframe src="https://player.vimeo.com/video/188797167?title=0&byline=0&portrait=0" width="940" height="528" frameborder="0" webkitallowfullscreen mozallowfullscreen allowfullscreen></iframe>
+      </div>
+      <div class="col-sm-12 visible-sm">
+			<iframe src="https://player.vimeo.com/video/188797167?title=0&byline=0&portrait=0" width="720" height="405" frameborder="0" webkitallowfullscreen mozallowfullscreen allowfullscreen></iframe>
+      </div>
+      <div class="col-xs-12 visible-xs">
+			<iframe src="https://player.vimeo.com/video/188797167?title=0&byline=0&portrait=0" width="290" height="163" frameborder="0" webkitallowfullscreen mozallowfullscreen allowfullscreen></iframe>
+      </div>
+    </div>
+  </div>
+</div>
+<div class="container">
+  <div class="row">
+    <div class="col-lg-12">
+      <h2>decouvrez nos creations</h2>
+    </div>
+  </div>
+  <div class="row">
+    <div class="col-lg-4 col-md-4 col-sm-12 col-xs-12"><a class="travailsocial" id="behance" href="http://www.behance.net/lesmarqueurs" target="_blank">behance</a></div>
+    <div class="col-lg-4 col-md-4 col-sm-12 col-xs-12"><a class="travailsocial" id="dribbble" href="http://dribbble.com/lesmarqueurs" target="_blank">dribbble</a></div>
+    <div class="col-lg-4 col-md-4 col-sm-12 col-xs-12"><a class="travailsocial" id="vimeo" href="http://vimeo.com/lesmarqueurs" target="_blank">vimeo</a></div>
+  </div>
+  <div class="row">
+    <div class="col-lg-12"><img src="img/lesmarqueurs.png" class="img-responsive" alt="Responsive image"></div>
+  </div>
+  <div class="row">
+    <div class="col-lg-4 col-md-4 col-sm-4 col-xs-12"><a class="bouton bleulinkedin" href="http://www.linkedin.com/in/renaudmaxime" target="_blank"><span class="textebase">maxime renaud</span><span class="textehover">se connecter : linkedin</span></a></div>
+    <div class="col-lg-4 col-md-4 col-sm-4 col-xs-12"><a class="bouton bleulinkedin" href="http://www.linkedin.com/in/dewolfmathilde" target="_blank"><span class="textebase">mathilde dewolf</span><span class="textehover">se connecter : linkedin</span></a></div>
+    <div class="col-lg-4 col-md-4 col-sm-4 col-xs-12"><a class="bouton bleulinkedin" href="http://www.linkedin.com/in/alexcarijomonteiro" target="_blank"><span class="textebase">alex monteiro</span><span class="textehover">se connecter : linkedin</span></a></div>
+  </div>
+  <div class="col-lg-12">
+    <div id="telephone"> <a href="callto:0033950138266"><span>+33</span> 9 50 13 82 66</div>
+    </a></div>
+  <div class="row">
+      <div class="col-lg-12"><a class="bouton" href="mailto:contact@lesmarqueurs.com"><span class="textebase">vous avez une question ?</span><span class="textehover">envoyer un courriel</span></a></div>
+  </div>
+  <div class="row">
+    <div class="col-lg-12">
+      <form action="//lesmarqueurs.us5.list-manage.com/subscribe/post?u=933b23781250568e94283ee8d&amp;id=ba15476f31" method="post" id="mc-embedded-subscribe-form" name="mc-embedded-subscribe-form" class="validate" target="_blank" novalidate>
+        <div class="mc-field-group">
+          <input type="email"  placeholder="vous@email.com" value="" name="EMAIL" class="required email" id="mce-EMAIL">
+        </div>
+        <div id="mce-responses" class="clear">
+          <div class="response" id="mce-error-response" style="display:none"></div>
+          <div class="response" id="mce-success-response" style="display:none"></div>
+        </div>
+        <!-- real people should not fill this in and expect good things - do not remove this or risk form bot signups-->
+        <div style="position: absolute; left: -5000px;">
+          <input type="text" name="b_933b23781250568e94283ee8d_ba15476f31" tabindex="-1" value="">
+        </div>
+        <div class="clear">
+          <input type="submit" value="s'abonner aux nouvelles" name="subscribe" id="mc-embedded-subscribe" class="button">
+        </div>
+      </form>
+    </div>
+  </div>
+</div>
+<!-- /.container -->
 
-<div id="instafeed"></div>
-  
-  
+<div id="googlemap"></div>
+<div class="blackback">
+  <div class="container">
+    <div class="row">
+      <div class="col-lg-12"><a class="bouton blanc" href="http://fr.foursquare.com/lesmarqueurs" target="_blank"><span class="textebase">45 rue polonceau - 75018 paris</span><span class="textehover">laissser un conseil foursquare</span></a></div>
+    </div>
+  </div>
+</div>
+<div class="blackbackwood">
+  <div class="container">
+    <div class="row">
+      <div class="col-lg-12"><img src="img/lesmarqueursblanc.png" class="img-responsive" alt="Responsive image"></div>
+    </div>
+    <div class="row">
+      <div class="col-lg-12">studio de création 360°</br>
+        depuis 2012 © deuxmilledixsept</br>
+        #artdirection #motiondesign #socialmedia</div>
+    </div>
+    <div class="row">
+      <div class="col-lg-12"> <a href="http://facebook.com/lesmarqueurs" target="_blank">facebook</a> <a href="https://www.linkedin.com/company/2876594" target="_blank">linkedin</a> <a href="http://instagram.com/lesmarqueurs" target="_blank">instagram</a> <a href="http://twitter.com/lesmarqueurs" target="_blank">twitter</a> <a href="http://fr.viadeo.com/fr/company/les-marqueurs" target="_blank">viadeo</a> <a href="http://youtube.com/lesmarqueurs" target="_blank">youtube</a> </div>
+    </div>
+  </div>
+</div>
+<div class="container">
+  <div class="row">
+    <div class="col-lg-12"><a class="bouton" href="mailto:contact@lesmarqueurs.com"><span class="textebase">obtenir un devis</span><span class="textehover">contact@lesmarqueurs.com</span></a></div>
+  </div>
+</div>
 </body>
 </html>
