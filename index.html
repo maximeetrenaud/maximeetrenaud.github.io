@@ -20,10 +20,7 @@
 <script type="text/javascript">
     var feed = new Instafeed({
         get: 'user',
-        userId: '2283226522',
-        filter: function(image) {
-            return image.tags.indexOf('TAG_NAME') >= 0;
-        }
+        userId: '2283226522'
     });
     feed.run();
 </script>
