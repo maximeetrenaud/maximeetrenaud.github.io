@@ -1,0 +1,200 @@
+BlackBird Studio
+
+RECORDING - MIXING - MASTERING
+
+<div id="header">
+<div class="col-lg-12">
+<div id="headertext">
+<div id="headertoptext">[ blackbird entertainment ]</div>
+<div id="headerbottomtext">recording - mixing - mastering</div>
+</div>
+</div>
+<div class="col-lg-12">
+<ul id="headersocial">
+<li><a target="_blank" href="https://www.facebook.com/BlackBirdEntertainment">facebook</a></li>
+<li class="hide">—</li>
+<li><a target="_blank" href="https://www.instagram.com/blackbird_studio">instagram</a></li>
+<li class="hide">—</li>
+<li><a target="_blank" href="https://twitter.com/Blck_Brd">twitter</a></li>
+</ul>
+</div>
+<div id="headerlogo"><img src="template/img/headerlogo.png" class="img-fluid" alt="Responsive image"></div>
+<div class="col-lg-12">
+<div id="headermail"><a href="mailto:contact@blackbirdstudio.fr">contact@blackbirdstudio.fr</a></div>
+</div>
+</div>
+<div id="content">
+<div class="row first">
+<div class="col-lg-6 col-md-6 col-sm-6 col-xs-12">
+<img id="black" src="template/img/black.png" class="img-fluid" alt="Responsive image">
+<img id="bird" src="template/img/bird.png" class="img-fluid" alt="Responsive image">
+</div>
+<div class="col-lg-6 col-md-6 col-sm-6 col-xs-12 wedo rellax"  data-rellax-speed="1">
+<div id="wedotop">
+<h1>
+studio
+</h1>
+<h2 class="tlt">
+    <ul class="texts">
+        <li data-in-effect="fadeIn" data-out-effect="fadeOut">we_record</li>
+        <li data-in-effect="fadeIn" data-out-effect="fadeOut">we_mix</li>
+        <li data-in-effect="fadeIn" data-out-effect="fadeOut">we_master</li>
+    </ul>
+</h2>
+<h2 class="tlt">
+    <ul class="texts">
+        <li data-in-effect="fadeIn" data-out-effect="fadeOut">we_mix</li>
+        <li data-in-effect="fadeIn" data-out-effect="fadeOut">we_master</li>
+        <li data-in-effect="fadeIn" data-out-effect="fadeOut">we_record</li>
+    </ul>
+</h2>
+<h2 class="tlt">
+    <ul class="texts">
+        <li data-in-effect="fadeIn" data-out-effect="fadeOut">we_master</li>
+        <li data-in-effect="fadeIn" data-out-effect="fadeOut">we_record</li>
+        <li data-in-effect="fadeIn" data-out-effect="fadeOut">we_mix</li>
+    </ul>
+</h2>
+</div>
+</div>
+</div>
+
+<div class="row rowtop rellax" data-rellax-speed="-1">
+<div class="col-lg-6 col-md-6 col-sm-6 col-xs-12">
+<div id="photolefttop">
+<img src="template/img/blackbirdstudio01.png" class="img-fluid" alt="Responsive image">
+</div>
+</div>
+<div class="col-lg-6 col-md-6 col-sm-6 col-xs-12"></div>
+</div>
+
+<div class="row middle rellax" data-rellax-speed="-2">
+<div class="col-lg-6 col-md-6 col-sm-6 col-xs-12">
+<div id="about">
+{{block:about}}
+</div>
+</div>
+<div class="col-lg-6 col-md-6 col-sm-6 col-xs-12">
+<div id="photorighttop">
+<img src="template/img/blackbirdstudio02.png" class="img-fluid" alt="Responsive image">
+</div>
+</div>
+</div>
+
+<div class="row bottom">
+<div class="col-lg-4 col-md-4 col-sm-12 col-xs-12 colexte rellax"  data-rellax-speed="-0.5">
+<div id="recording">
+<div id="recording01">
+record_ing
+</div>
+<div id="recording02">
+120e / track
+</div>
+</div>
+</div>
+
+<div class="col-lg-4 col-md-4 col-sm-12 col-xs-12 colcent rellax"  data-rellax-speed="0">
+<div id="mixing">
+<div id="mixing01">
+mix_ing
+</div>
+<div id="mixing02">
+200e / track
+</div>
+</div>
+</div>
+
+<div class="col-lg-4 col-md-4 col-sm-12 col-xs-12 colexte rellax"  data-rellax-speed="0.5">
+<div id="mastering">
+<div id="mastering01">
+master_ing
+</div>
+<div id="mastering02">
+45e / track
+</div>
+</div>
+</div>
+</div>
+<div class="row">
+<div class="col-lg-12">
+{{gal:slider}}
+</div>
+</div>
+<div class="row contentcentertop">
+<div class="col-lg-12">
+	<h1>already<br>
+		<span>BLACKLIST_ED</span></h1>
+</div>
+<div class="col-lg-6 col-md-6 col-sm-6 col-xs-6">
+<div id="blacklistedleft">
+{{block:blacklisted/left}}
+</div>
+</div>
+<div class="col-lg-6 col-md-6 col-sm-6 col-xs-6">
+<div id="blacklistedrighttop">
+we_recorded
+we_mixed
+we_mastered
+</div>
+<div id="blacklistedrightbottom">
+{{block:blacklisted/right}}
+</div>
+</div>
+</div>
+<div class="row">
+<div class="col-lg-12">
+{{gal:artists}}
+</div>
+</div>
+
+<div class="row mailchimp">
+   <div class="col-lg-12">
+	   <h1>blacklist_yourself</h1>
+   </div>
+    <div class="col-lg-12">
+      <form action="//blackbirdstudio.us15.list-manage.com/subscribe/post?u=f15aa8423442766c6bb03b13c&amp;id=78f579da29" method="post" id="mc-embedded-subscribe-form" name="mc-embedded-subscribe-form" class="validate" target="_blank" novalidate>
+        <div class="mc-field-group">
+          <input type="email"  placeholder="vous@email.com" value="" name="EMAIL" class="required email" id="mce-EMAIL">
+        </div>
+        <div id="mce-responses" class="clear">
+          <div class="response" id="mce-error-response" style="display:none"></div>
+          <div class="response" id="mce-success-response" style="display:none"></div>
+        </div>
+        <!-- real people should not fill this in and expect good things - do not remove this or risk form bot signups-->
+        <div style="position: absolute; left: -5000px;">
+          <input type="text" name="b_f15aa8423442766c6bb03b13c_78f579da29" tabindex="-1" value="">
+        </div>
+        <div class="clear">
+          <input type="submit" value="S'ABONNER" name="subscribe" id="mc-embedded-subscribe" class="button">
+        </div>
+      </form>
+    </div>
+  </div>
+<div class="row">
+<div class="col-lg-12">
+<div id="instafeed" class="insta"></div>
+</div>
+</div>
+<div class="row footer">
+<div class="col-lg-12">
+<div id="map"><img src="template/img/map.png" class="img-fluid" alt="Responsive image"></div>
+</div>
+<div class="col-lg-12">
+<div id="footermail"><a href="mailto:contact@blackbirdstudio.fr">contact@blackbirdstudio.fr</a></div>
+</div>
+</div>
+
+
+<div class="row commerce">
+<div class="col-lg-12">
+<script src="//www.powr.io/powr.js" external-type="pulsecms"></script> 
+ <div class="powr-digital-download" id="27e79042_1499210410"></div>
+</div>
+</div>
+
+<div class="row">
+<div class="col-lg-12">
+<div id="lesmarqueurs"><a target="_blank" href="http://lesmarqueurs.com">site par les marqueurs</a></div>
+</div>
+</div>
+</div>

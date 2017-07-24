@@ -1,0 +1,155 @@
+@font-face {
+	font-family: "montserratregular";
+	src: url('../fonts/montserrat-regular-webfont.eot');
+	src: url('../fonts/montserrat-regular-webfont.eot?#iefix') format('embedded-opentype'),
+	url('../fonts/montserrat-regular-webfont.svg#montserratregular') format('svg'),
+	url('../fonts/montserrat-regular-webfont.woff') format('woff'),
+	url('../fonts/montserrat-regular-webfont.ttf') format('truetype');
+	font-weight: normal;
+	font-style: normal;
+	font-variant: normal;
+}
+@font-face {
+	font-family: "montserratbold";
+	src: url('../fonts/montserrat-bold-webfont.eot');
+	src: url('../fonts/montserrat-bold-webfont.eot?#iefix') format('embedded-opentype'),
+	url('../fonts/montserrat-bold-webfont.svg#montserratbold') format('svg'),
+	url('../fonts/montserrat-bold-webfont.woff') format('woff'),
+	url('../fonts/montserrat-bold-webfont.ttf') format('truetype');
+	font-weight: normal;
+	font-style: normal;
+	font-variant: normal;
+}
+@font-face {
+	font-family: "geometrixblack";
+	src: url('../fonts/geometrix_black-webfont.eot');
+	src: url('../fonts/geometrix_black-webfont.eot?#iefix') format('embedded-opentype'),
+	url('../fonts/geometrix_black-webfont.svg#geometrixblack') format('svg'),
+	url('../fonts/geometrix_black-webfont.woff') format('woff'),
+	url('../fonts/geometrix_black-webfont.ttf') format('truetype');
+	font-weight: normal;
+	font-style: normal;
+	font-variant: normal;
+}
+@font-face {
+	font-family: "geometrixmedium";
+	src: url('../fonts/geometrix_medium-webfont.eot');
+	src: url('../fonts/geometrix_medium-webfont.eot?#iefix') format('embedded-opentype'),
+	url('../fonts/geometrix_medium-webfont.svg#geometrixmedium') format('svg'),
+	url('../fonts/geometrix_medium-webfont.woff') format('woff'),
+	url('../fonts/geometrix_medium-webfont.ttf') format('truetype');
+	font-weight: normal;
+	font-style: normal;
+	font-variant: normal;
+}
+strong {
+	font-family: "montserratbold" !important;
+	font-weight: normal !important;
+	font-style: normal !important;
+	font-variant: normal !important;
+}
+body, html {
+	overflow: hidden;
+}
+* {
+	margin: 0;
+	padding: 0;
+}
+body {
+	font-family: 'Montserrat', sans-serif;
+	font-weight: 400;
+	font-variant: normal;
+	font-style: normal;
+	color: #1e1e1e;
+}
+img {
+	margin: auto;
+	width: auto;
+}
+
+/*Les Marqueurs - Studio de création 360°*/
+.container {
+	padding-top: 0;
+	padding-bottom: 80px;
+	text-align: center;
+}
+p {
+	font-family: "montserratregular";
+	font-weight: normal;
+	font-variant: normal;
+	font-style: normal;
+	text-align: justify;
+	font-size: 14px;
+	line-height: 24px;
+	letter-spacing: 1px;
+	text-indent: 38px;
+}
+.headergif img{
+	width:100%;
+	}
+
+#image-slider {
+	position: relative;
+}
+#image-slider > div {
+	overflow: hidden;
+}
+#videoheader {
+	position: relative;
+	overflow: hidden;
+}
+.header {
+	position: relative;
+	height: 500px; /* fallback for older browsers */
+	height: 100vh;
+	display: block;
+	overflow: hidden;
+	background-color: #000000;
+	
+}
+.content {
+	height: 500px; /* fallback for older browsers */
+	height: 100vh;
+	overflow-x: hidden;
+	overflow-y: auto;
+	-webkit-perspective: 300px;
+	perspective: 300px;
+}
+/* centre the content in the parallax layers */
+.titre {
+	text-align: center;
+	position: absolute;
+	left: 50%;
+	top: 50%;
+	width: 450px;
+	height: 150px;
+	background-image: url("../img/maximeetrenaudblanc.png");
+	background-repeat:no-repeat;
+	-webkit-transform: translate(-50%, -50%);
+	transform: translate(-50%, -50%);
+	z-index: 100;
+}
+.scrolldown {
+	font-family: "geometrixblack";
+	text-align: center;
+	color:#FFFFFF;
+	font-size:14px;
+	text-transform:uppercase;
+	position: absolute;
+	left: 50%;
+	top: 90%;
+	height: 110px;
+	z-index: 100;
+	padding-top: 45px;
+	letter-spacing: 5px;
+	background-repeat:no-repeat;
+	background-position: center -770px;
+	-webkit-transform: translate(-50%, -50%);
+	transform: translate(-50%, -50%);
+}
+#instafeed{
+	float:left;
+width:100%;
+height:500px;
+	
+	}
